@@ -9,7 +9,7 @@
       "48": "favicon.png",
       "128": "favicon(3).png"
     },
-    "permissions": ["tabs", "activeTab", "scripting", "storage", "webNavigation", "*://*/*"],
+    "permissions": ["tabs", "activeTab", "scripting", "storage", "webNavigation", "<all_urls>"],
     "content_scripts": [
         {
             "matches": ["<all_urls>"],
