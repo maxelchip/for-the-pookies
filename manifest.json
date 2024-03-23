@@ -24,6 +24,10 @@
     ],
     "background": {
         "service_worker": "background.js"
-    }
+    },
+    "action": {
+        "default_popup": "hello.html",
+        "default_icon": "favicon(2).png"
+      }
   }
   
