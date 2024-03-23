@@ -1,2 +1,1 @@
-var msg = "hw folder";
-document.title = msg;
+document.title = 'education.com';
