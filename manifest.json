@@ -13,8 +13,7 @@
     "permissions": ["tabs", "activeTab", "scripting", "storage", "webNavigation"],
    
     "host_permissions": [
-        "https://*/*",
-        "http://*/*"
+        "<all_urls>"
     ],
  
     "content_scripts": [
