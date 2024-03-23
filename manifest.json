@@ -9,12 +9,15 @@
       "48": "favicon.png",
       "128": "favicon(3).png"
     },
+    "permissions": ["tabs", "activeTab"],
     "content_scripts": [
         {
-          "matches": ["<all_urls>"],
-          "js": ["runthrutabs.js"]
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
         }
-    ]
-    
+    ],
+    "background": {
+        "service_worker": "background.js"
+    }
   }
   
