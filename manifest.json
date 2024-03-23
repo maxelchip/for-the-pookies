@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "forthepookies",
+    "description": "ass kicker",
+    "version": "1.0",
+    "icons": {
+      "16": "favicon(2).png",
+      "32": "favicon(1).png",
+      "48": "favicon.png",
+      "128": "favicon(3).png"
+    },
+    "permissions": ["tabs", "http://*/", "https://*/"],
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["content.js"]
+        }
+      ]
+    
+  }
+  
