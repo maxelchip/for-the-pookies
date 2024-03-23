@@ -1,6 +1,8 @@
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
-    chrome.scripting.executeScript({
-        target: {tabId: tabId},
-        files: ['content.js']
-    });
+    if (!tab.url.startsWith('chrome://')) {
+        chrome.scripting.executeScript({
+            target: {tabId: tabId},
+            files: ['content.js']
+        });
+    }
 });
